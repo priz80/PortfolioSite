@@ -3,6 +3,22 @@
   scroll-behavior: smooth;
 }
 
+a {
+  color: inherit;           /* Наследует цвет от родителя */
+  text-decoration: none;    /* Убирает подчёркивание */
+  font: inherit;            /* Наследует шрифт */
+  cursor: pointer;          /* Или `pointer`, если хотите курсор-руку */
+  outline: none;            /* Убирает фокус-рамку (опционально) */
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -173,6 +189,39 @@ h2 {
   align-items: flex-start;
   justify-content: space-between;
 }
+
+.img-block {
+  position: relative;
+}
+
+.masca {
+  position: absolute;
+  visibility: hidden;
+ background: rgba(0, 0, 0, 0.8);
+ width: 100%;
+ height: 363px;
+ top: 0;
+ left: 0;
+ z-index: 99;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.masca::before {
+  content: 'окрыть сайт';
+  text-transform: uppercase;
+      font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+
+.img-block:hover .masca {
+  visibility: visible;
+}
+
+
 
 /* .projects-slider {
   
