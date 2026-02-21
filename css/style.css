@@ -180,7 +180,7 @@ h2 {
 
 .project-text {
   display: flex;
-  flex-basis: 60%;
+  flex-basis: 38%;
   flex-wrap: wrap;
 }
 
@@ -196,7 +196,7 @@ h2 {
 .project-time,
 .project-cost {
   flex-basis: 50%;
-  margin-bottom: 44px;
+  margin-bottom: 29px;
 }
 .project-time,
 .project-cost,
